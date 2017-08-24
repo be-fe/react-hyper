@@ -51,7 +51,13 @@ var reactHyper = function (tagOrComp, classNameOrProps, props /* , ...ReactEleme
     else {
         props = props || {};
         props.className = props.className || classNameOrProps;
-        var args = [tagOrComp, props].concat(Array.prototype.slice.apply(arguments, 3));
+        var args;
+        if (arguments.length > 3) {
+            args = [tagOrComp, props].concat(Array.prototype.slice.call(arguments, 3));
+        }
+        else {
+            args = [tagOrComp, props];
+        }
         return createElement.apply(null, args);
     }
 };
