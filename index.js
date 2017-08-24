@@ -34,7 +34,6 @@ var reactHyper = function (tagOrComp, classNameOrProps, props /* , ...ReactEleme
     // for development env, we validate the call to the hyper helper function
     if (__DEVELOPMENT__) {
         if ((classNameOrProps && classNameOrProps.$$typeof)
-            || (typeof classNameOrProps === 'string' && typeof props === 'string')
             || (typeof classNameOrProps === 'string'
             && (props && props.$$typeof || (typeof props !== 'object' && props)))
         ) {
