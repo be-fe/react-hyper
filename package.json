@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/be-fe/react-hyper/issues"
   },
-  "homepage": "https://github.com/be-fe/react-hyper#readme"
+  "homepage": "https://github.com/be-fe/react-hyper#readme",
+  "dependencies": {
+    "react": ">=15.0.0"
+  }
 }
