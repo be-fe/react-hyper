@@ -16,7 +16,10 @@
     "url": "https://github.com/be-fe/react-hyper/issues"
   },
   "homepage": "https://github.com/be-fe/react-hyper#readme",
-  "dependencies": {
+  "devDependencies": {
+    "react": ">=15.0.0"
+  },
+  "peerDependencies": {
     "react": ">=15.0.0"
   }
 }

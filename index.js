@@ -66,68 +66,64 @@ var reactHyper;
      * @def: .tag: (classNameOrProps, props, ...ReactElements) => ReactElement
      */
     [
-        // common
-        'div',
-        'span',
-        'a',
-        'img',
+       // doc meta
+        'link', 'meta', 'style', 'title',
+
+        // section root
+        'body',
+
+        // content section
+        'address', 'article', 'aside', 'footer', 'header',
+        'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+        'hgroup',
+        'nav', 'section',
+
+        // text content
+        'blockquote', 'dd', 'dir', 'dt', 'div', 'dl',
+        'figcaption', 'figure', 'hr',
+        'ul', 'ol', 'li',
+        'p',
+        'main',
         'pre',
 
-        // headings
-        'h1',
-        'h2',
-        'h3',
-        'h4',
-        'h5',
-        'h6',
+        // inline text
+        'span',
+        'a', 'abbr',
+        'bdi', 'bdo', 'br',
+        'cite', 'code', 'data', 'dfn', 'em',
+        'b', 'i', 's',
+        'kdb',
+        'mark', 'q',
+        'rp', 'rt', 'rtc',
+        'samp',
+        'small',
+        'strong', 'sub', 'time',
+        'tt', 'u', 'var', 'wbr',
 
-        // table related
-        'table',
-        'thead',
-        'tbody',
-        'th',
-        'tr',
-        'td',
+        // image and multimedia
+        'area', 'audio', 'img', 'map', 'track', 'video',
 
-        // semantic tags
-        'aside',
-        'header',
-        'footer',
-        'section',
-        'article',
+        // embedded content
+        'applet', 'embed', 'iframe', 'noembed', 'object', 'param', 'picture', 'source',
 
-        // inline styles
-        'em',
-        'strong',
+        // scripting
+        'canvas', 'noscript', 'script',
 
-        // not recommended
-        'i',
-        'b',
+        // demarcating edits
+        'del', 'ins',
 
-        // form related
-        'label',
-        'input',
-        'button',
-        'textarea',
-        'p',
-        'select',
-        'option',
-        'form',
+        // table
+        'caption', 'col', 'colgroup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr',
 
-        // list related
-        'ul',
-        'ol',
-        'li',
+        // forms
+        'button', 'datalist', 'fieldset', 'form', 'input', 'label', 'legend', 'meter', 'optgroup',
+        'option', 'output', 'progress', 'select', 'textarea',
 
-        // media related
-        'video',
-        'audio',
+        // interactive elements
+        'details', 'dialog', 'menu', 'menuitem', 'summary',
 
-        // others
-        'iframe',
-        'colgroup',
-        'col',
-        'area'
+        // web components
+        'content', 'elements', 'shadow', 'slot', 'template'
     ].forEach(function (tag) {
         reactHyper[tag] = reactHyper.bind(null, tag);
     });
